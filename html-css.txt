@@ -1,0 +1,848 @@
+**Atalho: Ctrl+shift+p == Envelopamento com abreviatura(abb)**
+**Atalho: shift+tab == Mover um bloco intero para trás**
+**Atalho: <li>*7 cria-se a tag <li> 7 vezes**
+**Atalho: segurar ALT e ir clicando nos itens**
+**Atalho: Ctrl + ; selecione o texto e ele fica comentado**
+**Atalho: Alt + z quebra de linha no vscode**
+**Atalho: Shift + Alt + F Formata os texto automaticamente no vs**
+
+
+*Como a internet surgiu?
+
+Nasceu durante a Guerra Fria(EUA com medo do satéliete Sputnik criou a DARPA)
+
+Darpa(criada por Dwight Eisenhower) um dos seus projetos era fazer 
+um grande bakup dos dados das bases militares espalhadas pelos EUA, assim criando a ARPANET
+
+ARPANET: criada para proteger redes militares começou com quatro computadores
+porém não consigam se comunicar porque cada um 
+falava um "idioma", por isso foi criado a NCP
+
+NCP(Network Control Protocole) com o tempo a rede cresceu demais e ficou impossivel utilizar 
+a NCP, então foi criado a TCP(Uma versão melhorada da NCP onde não precisava parar a 
+rede para se comunicarem) e o IP(Utilizado para identificar cada computador)
+
+TCP/IP: Protocolos utilizados até hoje, porém muito mais evoluída
+
+ARPANET cresceu demais então foi separado 3 redes
+
+MILNET: usada por militares
+NSFNET: usada para pesquisas/ciência/estudos
+Comercial: rede comercial
+
+Interconnect Network: criada com o objetivo das 3 redes se comunicarem entre si
+
+HTTP(especializado em hipertxto): criada por Tim Bernes-Lee áreas sensíveis que podiam ser acessadas 
+através de links(protocolo)
+
+HTTPS com S é de segurança
+
+WWW: rede de alcance mundial
+
+
+
+Como a Internet Funciona?
+
+Representação de Dados:
+
+"O computador é um burro muito rápido"
+
+0 e 1 (Sinais elétricos com(1) e sem(0) sinal)
+
+bit(binary digit) == 0 ou 1
+
+byte = porção mínima de 8 bits para representar ums determinada informação
+
+01000001 == a letra A
+
+UTF-8?
+código multibyte
+
+o computador só entende ondas quadradas ou ondas binárias(0 e 1)
+
+8 bits == 1 byte
+1024 bytes == 1 KB(Kilobyte)
+1024 KB == 1 MB(Megabyte)
+1024 MB == 1 GB(Gigabyte)
+1024 GB == 1 TB(Terabyte)
+1024 TB == 1 PB(Petabyte)
+1024 PB == 1 EB(Exabyte)
+1024 EB == 1 ZB(Zettabyte)
+1024 ZB == 1 YB(Yottabyte)
+
+MB(Megabytes) != Mb(Megabits)
+
+MB == armazenamento(HD)
+Mb == transmissão(internet)
+
+
+
+Como nos conectamos?
+
+Computador conversa em ondas quadradas
+Telefone conversa em ondas senoidas
+
+Aparelho para fazer a conversão das duas "linguagens"
+
+quadrada para senoidal == modulação
+senoidal para quadrada == demodulação
+
+*Modem*
+
+youtube.com está em um servidor ou em um conjunto de servidores
+
+os servidores tem números
+
+Servidor DNS("agenda eletrônica") == ligação entre os nomes/domínios e os números
+
+O pacote dentro do servidor vem ao cliente em diferentes caminhos e em diferentes velocidades
+
+
+
+O que é domínio e hospedagem?
+
+Hospedagem == espaço para guardar/hospedar arquivos(servidor)
+Domínio == "nomezinho" do site
+
+URL(Uniform resorce locator):
+
+(www.github.com/gustavoguanabara)URL
+
+(github.com)DOMÍNIO
+
+TLD{
+   GTLD(Generic)
+   .io .store .com .net .info .online .gov .edu 
+
+   CCTLD(Contry Code)
+   .br .us .uk .ar .tv(tuvalu) 
+}
+
+(www) SUB-DOMÍNIO
+
+(/gustavoguanabara)CAMINHO
+
+
+
+A diferença entre HTML,CSS e JavaScript
+
+A HTML(Hypertext Markup Language)linguagem de marcação para hipertexto
+**Marcar coisas no nosso documento**
+
+AS CSS(Cascading Style Sheets)folhas de estilo em cascata
+**Estilizar o nosso documento**
+
+O JS(Javascript)
+**Dar funcionalidade no nosso documento**
+
+
+
+Primeiro código HTML:
+
+Tags Novas:
+<h1>(Título)
+<p>(Parágrafo)
+<hr>(Linha horizontal)
+
+OBS:
+<meta charset="UTF-8">(serve para o código não ter problema com acentuação)
+
+
+
+Parágraos e Quebras:
+
+Tags Novas:
+<br>(Quebra de linha)
+
+OBS:
+Para colocar o sinal de maior e menos no documento usa-se:
+&lt;(para menor)
+&gt;(para maior)
+
+
+
+Símbolos e Emojis no seu Site:
+
+OBS:
+Adicionar símbolos:
+&copy;
+&reg;
+&trade;
+&euro;
+&pound;
+&yen;
+&cent;
+&Delta;
+&uparrow; // &uarr;
+
+Adicionar emojis(emojipedia):
+&#x1F596
+
+
+
+Imagens:
+
+Programas/Sites:
+gimp
+pexels
+unsplash
+
+Formatos:
+JPEG(Compactar uma imagem/Não tem suporte para transparência)
+JPEG tem a extenção JPG
+PNG(Qualidade maior/Tem suporte)
+PNG tem a extenção PNG
+
+1500px é a largura máxima para colocar um imagem em um site
+
+72 ou 50 a resoluçao ideal para a imagem
+
+
+
+A tag img em HTML5:
+
+<img src="" alt="">
+
+"src" pode ter:
+imagens dentro da mesma pasta do documento 
+imagens de outra pasta/sub-pasta
+imagens externas
+
+apertando a tecla ctrl+espaço{
+    imagens dentro da mesma pasta
+    imagens de uma sub-pasta
+}
+copiando o endereço da imagem e colando no src{
+    imagens externas
+}
+
+
+
+Favicon(Arquivo ICO):
+
+Sites:
+icon archive(Favicons gratuitos)
+favicon.cc(Desenhar arquivo ICO)
+favicon.io(Converter PNG para ICO)
+
+Tag nova:
+link:favicon(href = nome do arquivo ico)
+
+
+
+Hierarquia de Títulos:
+
+<h1> Título principal 
+<h2> Nível 2
+<h3> Nível 3
+<h4> Nível ...
+<h5> ....
+<h6> ..
+
+Existem 6 níveis
+
+
+
+Semântica em HTML5:
+
+Tags obsoletas:
+<bgcolor>
+<font>
+<center>
+
+
+
+Formatações:
+
+<address>(Indicar um endereço)
+
+Negrito/Destaque:
+Tag <b>(sem semântica)
+Tag <strong>(com semântica)
+
+Itálico/Ênfase:
+Tag <i>(sem semântica)
+Tag <em>(com semântica)
+
+Texto marcado:
+<mark>
+
+Texto deletado(riscado):
+<del>
+
+Texto inserido(sublinhado):
+<u>(sem semântica)
+<ins>(com semântica)
+
+Texto subrescrito:
+<sup>
+
+Texto subscrito:
+<sub>
+
+Código-fonte(Deixar a fonte monoespaçada para os códigos):
+<code>
+
+Pré-formatação:
+<pre>(Se guia pelas quebras de linhas; espaços; enters, etc. no código e replica no documento)
+
+Citações:
+<q>
+
+Citações de blocos/livros/cursos:
+<blockquote cite="o link do livro/curso...">
+
+Abreviações:
+<abbr title="pop up do texto que estiver aqui dentro">
+
+Texto invertido:
+<bdo dir="rtl(right to left) ltr(left to right) direção do texto">
+
+
+
+Listas:
+<ol type="1/A/a/I/i" start="início da lista">(Listas Ordenadas) tem uma ordem
+   <li>acordar
+   <li>ligar
+   <li>tomar cafe
+   <li>escovar os dentes
+
+<ul type="square/disc/circle">(Listas não ordenadas)
+   <li>pão
+   <li>leite
+   <li>alface
+
+
+
+Lista de Definição:
+<dl>(lista de definição)
+   <dt>(termo de definição)
+       <dd>(descrição)
+
+
+
+Links e Âncoras em HTML5:
+<a href="para onde o link vai">
+
+Link externo:
+<a href="link externo" target="_blank" rel="external">
+
+Link Interno:
+<a href="link dentro da página" rel="next" || rel="prev">
+target="_self"(link para o próprio site)
+
+rel="nofollow"(quer dizer que você não apoia esse conteúdo)
+rel="dofollow"(você confia)
+
+
+
+Links para download:
+<a href="link do arquivo para download" download="nome do arquivo" type="lista no site">
+
+site == iana.org/assignments/media-types/media-types.xhtml
+
+Exemplo:
+<a href="downloads/Screenshot_1.jpg" download="Screenshot_1" type="image/png" >Informações interessantes</a>
+
+
+
+Imagens que se adaptam:
+
+Primeiro cria-se a tag <picture>
+
+Depois cria-se a tag <img> e coloca a imagem maior ou a menor
+
+Acima da tag <img> cria-se o source:media:type
+
+Se a imagem colocada for a menor usa-se:
+<source media="(min-width: ...px)" srcset="imagem desejada" type="tipo da imagem(exemplo image/png)">
+
+Se a imagem colocada for a maior usa-se:
+<source media="(max-width: ...px)" srcset="imagem desejada" type="tipo da imagem(exemplo image/png)">
+
+
+
+Colocando áudio no site:
+
+Tag Nova:
+<audio>
+
+Parâmetros da tag <audio>:
+autoplay
+controls(audio aparecer no site)
+preload{
+   auto(carrega o áudio e as informações assim que entra no site)
+   metadata(carrega as informações importantes, porém não baixa o áudio até que ele seja tocado )
+   none(não carrega nenhuma informação até que o áudio seja tocado)
+}
+loop
+
+
+1ª maneira de adicionar audio é pela src da própria tag <audio>
+
+2ª maneira é adc a tag <audio> sem o src, e dentro da tag adicionar o <source:src>
+
+Tipos: 
+mp3
+ogg 
+wav(não é muito recomendado por ser muito pesado)
+
+
+
+Vídeos no site:
+
+Sugestões de apps/site:
+pexels
+handbrake
+vimeo
+youtube
+
+Tipos:
+mp4
+m4v(mais recomendado)
+webm(pequeno em relação ao tamanho, porém qualidade ruim)
+ogv
+
+Tag Nova:
+<video>
+
+Parâmetros da tag <video>:
+controls
+width=""
+src="vídeo"
+poster="imagem"
+autoplay 
+loop
+
+**Sources dentro da tag <vídeo> executam na ordem que são colocados
+**A tag <video> gasta muito do seu cliente
+
+
+
+CSS:
+
+CSS Inline:
+Adiciona-se o parâmetro style="comandos" dentro da tag desejada
+
+CSS Internos:
+Cria-se uma tag <style> dentro da tag <head>
+
+CSS Externos:
+Cria-se um arquivo .css e liga-se no seu arquivo .html, através da tag <lnik:css>
+
+
+
+Módulo 2:
+
+Psicologia das Cores
+
+*As cores podem influenciar na compra ou não de um produto
+
+*Fundo preto pode cansar a leitura
+
+
+
+Representando cores com CSS3
+
+Código Decimal = 0 1 2 3 4 5 6 7 8 9(Representação por RGB(RED, BLUE, GREEN))
+
+Código Hexadecimal(Hex) = 0 1 2 3 4 5 6 7 8 9 A B C D E F(F sendo a quantidade máxima e 0 a mínima)
+
+#0057ff(os dois 00 representam a quantidade de vermelho, o 57 representa a quantidade de verde,
+e o ff representa a quantidade de azul)
+
+Representação HSL(HUE, SATURATION, LUMINOSITY)
+
+Representação por nome
+
+
+
+Harmonia de cores
+
+Círculo cromático = serve para harmonizar as cores / entender harmonia de cores
+
+*Cores primárias(azul, amarelo, vermelho)
+Cores secundárias(verde, roxo, laranja)
+Tem uma harmonia meio grosseira*
+
+Cores terciárias tem um tom pastel
+
+Temperatura de cores
+   roxo até o amarelo-esverdiado no circulo croático são cores frias
+   
+   amarelo até o vermelho-arroxiado são cores quentes
+
+Uma paleta para o site tem de 3 a 5 cores no máximo, desconsiderando branco e preto
+
+Cores complementares = cores que contrastam com outras, é a cor oposta dela ou trace uma reta
+
+Cores análogas = cores que tenham a ver, é as cores vizinhas
+
+Cores análogas relacionadas = não criam um contraste muito forte, cores similares com um certo contraste 
+pegue 2 cores pule uma e selecione a próxima
+
+Cores intercaladas = parecidas com o anterior porem tem um contraste maior entre elas
+selecione uma e pula a outra
+
+Cores triádicas = cores simetricamente distribuídas
+selecione uma cor pule 3 cores pegue essa cor e pule mais 3 formando assim um triângulo
+
+Cores quadradas = parecidas com o anterior porém pulando 2 cores formando um quadrado
+
+Cores tetrádicas = pegando 2 cores complementares formando um retângulo
+
+Monocromio = pegar 1 cor e mudar sua saturação e luminosidade / degradê
+
+
+
+Paleta de cores:
+
+Sites/apps:Adobe Colors/Paletton/coolors
+
+Extenções:Colorzilla
+
+
+
+Criar degradê:
+
+background-image:linear-gradient(to right ou 90deg, white 20%, blue)
+background-image:radial-gradient(circle, white, blue)
+
+Configurações globais das CSS
+*{
+ height:100%;(para usar a altura máxima do site)
+}
+
+
+
+Tipografia:
+
+Séc 15 na europa, monges copistas tinham a função de copiar livros
+
+1450:
+
+Johannes Gutenberg inventou a prensa mecânica de tipos móveis
+
+queriam melhorar a visualização/legibilidade das letras
+
+tipo == týpos(ato de colocar algo no papel/ impressão)
+grafia == graphía(escrita)
+
+
+
+Antomia do tipo:
+
+tipo == cada uma das letras 
+
+Itens métricos:
+
+altura x(altura das letra minúsculas) == baseada na altura da letra x de uma fonte
+
+altura das letras maiúsculas == baseado na letra A ou Q
+
+altura ascendente(tamanho que vazou da letra) == exemplo b e k
+
+altura descendente(tamanho que vazou para baixo) == exemplo g ou q
+
+corpo == soma de todas as alturas
+
+Anatômicos geométricos
+
+"pézinho"(pequeno tracinho no final de algumas fontes) == serifa
+
+hastes == coluna da letra. Exemplo: "k" e "a"
+
+filete == "coluna" deitada da letra. Exemplo: "A" e "e"
+
+arcos == "barriguinha". Exemplo: n
+
+esporão == saltinho / base da letra. Exemplo: b (na fonte times new roman)
+
+vértice == parte de cima e baixo. Exemplo A e V
+
+terminal == Exemplo r
+
+Anatomia humanizada:
+
+braço == sai de um haste e leva pra cima. Exemplo k
+
+perna == sai da haste e leva para baixo. Exemplo k
+
+pé == fica na ponta inferior de uma letra. Exemplo A(na fonte Times)
+
+espinha == curva na letra independente do lado. Exemplo s(tem para as duas direções)
+
+barriga == Exemplo b
+
+olho == buraco na letra. Exemplo Q
+
+orelha == parte de cima em uma letra. Exemplo g
+
+cauda == parte inferior/descendente. Exemplo g e Q
+
+
+glifo == letra
+
+conjusto de glifos de uma determinada família(Times, Arial, etc) = fonte
+
+Família Tipografica:
+
+light, normal, seminegrito(semibold), negrito(bold), extranegrito(extrabold)
+
+Categorias de fonte:
+
+serifadas(recomendação: texto longos em papel) == tem serifa
+
+sans-serif(recomendação: texto longos em sites) == sem serifa
+
+monoespaçadas == todas as letras tem o mesmo tamanho
+
+handwriting == simula a caligrafia humana
+
+display == fonte bagunçada/comemorativas
+
+
+
+Famílias de fontes:
+
+Safe combination:
+Site == CSS web safe font combinations(W3Schools)
+
+Fontes genéricas:
+Sans-serif
+serif
+monospace
+
+
+
+Tamanho de fonte e suas medidas:
+
+font-size:
+
+Medidas absolutas:
+cm, mm, in(polegada), px, pt e pc(paica)
+
+Medidas relativas:
+em(altura do m maiúsculo), ex(altura do x), rem(relativo ao root)
+vw(porcentagem da largura da viewport(tamanho da tela))
+vh(porcentagem da altura da viewport) e %
+
+16px == 1em
+
+
+
+Peso da fonte:
+
+font-weight:
+
+lighter, normal, bold, bolder 
+100 - 900
+
+font-style:
+italic
+
+text-decorantion:
+underline
+
+shorthand font:
+font: font-style -> font-weight -> font-size -> font-family
+
+
+
+Usando Google fonts:
+1. procurar a fonte
+2. get font
+3. copiar o código do @import
+4. colar fora dos seletores
+
+@import(regra)
+body(seletor){
+     font-family(propriedades):Times New Roman(valores)
+} 
+
+
+
+Fontes externas baixadas(arquivo ttf/otf ):
+
+Sites:Dafont.com
+
+@font-face{
+   font-family:'Qualquer nome';
+   src: url('nome do arquivo') format('tipo do formato'), url('adicionar outro arquivo')...;
+}
+
+Tipos de format(vão dentro do format)
+- opentype (otf)
+- truetype (ttf)
+- embedded-opentype
+- truetype-aat (Apple Advanced Typography)
+- svg
+
+
+
+Capturando fontes:
+
+Fonts ninja(Extensão)
+
+
+
+Fontes na imagem:
+
+Sites:
+whatfontis.com/fontsquirrel.com/myfonts.com
+
+
+
+Alinhamento de textos:
+
+text-align: center/right/left/justify(alinhar os dois lados)
+text-indent: para criar o espaço no começo do parágrafo
+
+
+
+Usando id:
+
+@charset "UTF-8"(para uso de acentuação no código css)
+
+*Por padrão, todo seletor é genérico*
+
+id serve para identificar uma tag, para edita-lo de forma separada dos demais.
+
+em HTML é id = em CSS é #
+
+#nomedoid{
+}
+
+
+
+Class:
+
+Id é usado em só 1 tag
+Mais de uma tag usa-se class
+
+em HTML é class = em CSS é .
+
+.nomedaclass{
+}
+
+*Não dar nome aos ids e classes pela forma, e sim pela funcionalidade*
+
+
+
+Pseudo-classes:
+São relacionadas ao estado de um determinado elemento(configuração de estado)
+
+Em CSS é :
+
+div:hover(quando passar o mouse em cima){
+   background-color:blue
+}
+a:visited(quando o site for visitado){
+   ...
+}
+a:active(quando clicar){
+}
+
+Comandos:
+display:inline-block;(alinhar itens um na frente do outro)
+display:none;(não vai mostras nada)
+div > p(o símbolo ">" significa que esta dentro de algo, nesse caso o p dentro da tag div){
+} 
+
+
+
+Pseudo-elementos:
+
+Em CSS é ::
+
+a::after(coisas apareceram depois do texto){
+   content: '...'
+}
+a::before(coisas aparecem antes do texto){
+   content: '...'
+}
+
+Comandos:
+text-decoration:none(tira as decorações de algo, como um link por exemplo)
+
+
+
+Modelo de caixas:
+Aninhamento == uma coisa dentro de outra dentro de outra dentro de outra...
+
+A caixa tem height(altura), width(largura), border(borda), padding(preenchimento)
+margin(margem), outline(contorno)
+
+Box-level:Sempre se inicia em uma linha nova/isolado
+
+Exemplos:<div>/<video>/<footer>
+
+Inline-level:Fica na mesma linha/continua o conteúdo na mesma linha
+
+Exemplos:<span>/<strong>/<em>
+
+Comandos:
+border-width
+border-style:dashed/solid/dotted/double/groove
+border-color
+
+Sentido correto da configuração do padding:
+cima direita baixo esquerda/sentido do relógio
+
+margin: auto(centraliza a caixa)
+text-align: center(centraliza textos)
+
+SHORTHAND:
+border/outline: largura estilo e cor
+
+padding/margin: topo direita baixo esquerda
+Se as 4 forem iguais informe 1 vez
+Se 2 forem iguais a primeira medida é para cima e baixo e a segunda direita e esquerda
+
+
+
+Grouping Tags:
+<header> cabeçalho
+<main> principal
+<footer> rodapé
+<nav> menu de navegação
+<section> seção
+<article> artigo
+<aside> conteúdo relativo ao artigo
+
+
+
+Sombras:
+Shorthand{
+box-shadow: 1px(deslocamento horizontal) 1px(desl. vertical) 1px(espalhamento) black(cor da sombra)
+}
+
+
+Caixas com vértices arredondados:
+border-radius: raio da borda
+
+
+Planejamento de Site:
+Mockflow
+
+
+Variáveis em CSS:
+Primeiro se cria a pseudo-classe :root
+Depois usa-se --nomedavar: valor;
+Para usa-lo basta aperta CTRL + ESPAÇO e procura-lo na lista
+
+
+Responsividade para site:
+min-width:...
+max-width:...
+margin: auto
+
+img{
+  width:100%
+}
+
+Git e GitHub:
+Repositório Local(no seu computador): Git que está na sua máquina
+Repositório Remoto(online): Github que está na nuvem
+
+Push(jogar as atualizações do repositório local para o repositório remoto)

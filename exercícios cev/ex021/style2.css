@@ -1,0 +1,78 @@
+@charset "UTF-8";
+html{
+    height: 100%;
+}
+body{
+    background-color: #8b77e1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar img{
+    width: 50px;
+}
+.navbar{
+    background-color: #ffffff;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 4px #0000008d;
+    
+}
+.navbar-left{
+    margin: 0px 10px;
+    text-shadow: 2px 2px 4px rgba(15, 6, 19, 0.534);
+}
+a{
+    text-decoration: none;
+    padding: 2px;
+    
+}
+a:hover{
+    text-decoration: underline;
+    color: #7535b0;
+}
+.principal{
+    background-color: white;
+    padding: 1px 20px;
+    margin: 2px 0px;
+    border-radius: 20px 0px;
+    text-align: justify;
+    box-shadow: 2px 1px 4px #0000008d;
+    
+}
+.principal h2{
+    color: #261b57;
+    background-color: aliceblue;
+    width: 110px;
+    font-size: 17px;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.572);
+}
+footer{
+    color: white;
+    background-color: #504f4f;
+    padding: 1px 20px;
+    box-shadow: 2px 1px 4px #0000008d;
+    border-radius: 5px;
+}
+footer a{
+    display: flex;
+    color: #a7a70c;
+}
+.principal h1{
+    color: #a7a70c;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 2px 1px 2px #00000080;
+}
+div#bola{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+div#bola > img{
+    padding: 15px 14px;
+    width: 70px;
+}

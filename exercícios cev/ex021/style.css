@@ -1,0 +1,23 @@
+@charset "UTF-8";
+h1{
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+
+    border: 10px double #3f0b93;
+
+    padding: 5px 10px;
+
+    margin: 10px 20px;
+
+    outline: 5px dotted #2e0672;
+
+
+}
+a{
+    border: 3px dashed rgb(13, 52, 72);
+    padding: 1px 5px;
+}
+p{
+    margin: 20px 10px 10px auto;
+}
