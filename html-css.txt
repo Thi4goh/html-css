@@ -841,8 +841,20 @@ img{
   width:100%
 }
 
+
 Git e GitHub:
 Repositório Local(no seu computador): Git que está na sua máquina
 Repositório Remoto(online): Github que está na nuvem
 
 Push(jogar as atualizações do repositório local para o repositório remoto)
+
+
+Configurando o header:
+transition-duration: 1s;(faz uma transição de 1 segundo)
+min-height: ...px(configura a altura do header)
+
+Configurando aside:
+Personalizar a marcação da ul:
+list-style-type: '\codepoint do emoji'
+
+
