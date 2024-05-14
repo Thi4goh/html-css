@@ -858,3 +858,6 @@ Personalizar a marcação da ul:
 list-style-type: '\codepoint do emoji'
 
 
+
+Colocando imagens de fundo:
+background-image: url(local do aquivo img)
