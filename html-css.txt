@@ -861,3 +861,44 @@ list-style-type: '\codepoint do emoji'
 
 Colocando imagens de fundo:
 background-image: url(local do aquivo img)
+
+
+Mudando o tamanho da imagem:
+*configurar uma cor de fundo, mesmo que irá colocar uma imagem de fundo(por conta do carregamento do seu site)*
+
+background-size: 100%(a img ocupa o espaço inteiro do site porém fica com espaços "pretos" )
+background-size: contain(a img fica 100% exibida(não corta a imagem))
+background-size: cover(faz a img caber na tela mesmo que tenha que corta-la)
+
+background-attachment: scroll(a imagem "scrolla" com o conteúdo)
+background-attachment: fixed(a imagem fica fixada e só mexe o conteúdo)
+
+SHORTHAND - background:
+	color > image > position > repeat > [size](não funciona no shorthand) > attachment
+
+
+Centralização vertical:
+
+*Versão CeV*
+position: relative;(no container)
+position: absolute;(no conteudo)
+
+left: 50%
+top: 50%
+(alinham a ponta superior esquerda no centro)
+
+transform: translate(-50%, -50%);(alinha o centro do conteudo com o centro do container)
+
+right: 50%;
+bottom: 50%;
+(alinha a ponta inferior direita no centro)
+
+transform: translate(50%, 50%); (alinha o centro do conteudo com o centro do container)
+
+*Versão Flex*
+
+#container{
+	display: flex; /*Possui diversas funções, uma delas é habilitar o manejamento do conteúdo*/
+	justify-content: center; /*Alinhamento horizontal, ou seja, dispensa o "margin: auto"*/
+    align-items: center; /*Alinhamento vertical*/
+}

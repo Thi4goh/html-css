@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(37, 37, 37);
+    
+}
+
+#bloco-header{
+    color: white;
+}
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#bloco-flor{
+    
+    background-image: url(imagens/background001.jpg);
+    background-size: 100% 100%;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+
