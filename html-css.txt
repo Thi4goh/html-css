@@ -902,3 +902,6 @@ transform: translate(50%, 50%); (alinha o centro do conteudo com o centro do con
 	justify-content: center; /*Alinhamento horizontal, ou seja, dispensa o "margin: auto"*/
     align-items: center; /*Alinhamento vertical*/
 }
+
+tex-transform: uppercase;(colocar tudo em letra maiúscula)
+font-variant: small-caps;(todas ficam em letras maiúsculas, porém as primeiras letras ainda ficam maiores)
