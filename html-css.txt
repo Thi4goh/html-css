@@ -905,3 +905,38 @@ transform: translate(50%, 50%); (alinha o centro do conteudo com o centro do con
 
 tex-transform: uppercase;(colocar tudo em letra maiúscula)
 font-variant: small-caps;(todas ficam em letras maiúsculas, porém as primeiras letras ainda ficam maiores)
+
+
+Tabelas:
+
+**Tabelas ñ são usadas para criar a estrutura do site**
+
+Hierarquia de tabelas(simples):
+table == tabela
+	table row == linha de tabela(tag tr)
+		table header(título) == cabeçalho de tabela(tag th)
+		table data == dado de tabela(tag td)
+		
+
+border-collapse: collapse;(Novo comando, junta as bordas)
+
+Alinhamento dos dados na tabela:
+	alinhamento vertical == vertical-align: top/middle/bottom;
+	alinhamento horizontal == text-align: left/center/right;
+	
+	
+	
+Anatomia para Tabelas grandes
+	Table
+		Caption
+		thead
+			tr, td, th
+		tbody
+			tr, td, th
+		tfoot
+			tr, td, th
+
+
+Caption == Legenda da Tabela
+Escopo == Aonde os dados do título(th) estão localizados, col(itens se encontram abaixo, ou seja estão na mesma coluna) 
+ou row(na mesma linha)
