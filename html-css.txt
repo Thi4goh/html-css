@@ -909,10 +909,7 @@ font-variant: small-caps;(todas ficam em letras maiúsculas, porém as primeiras
 
 Tabelas:
 
-**Tabelas ñ são usadas para criar a estrutura do site**
-
-Hierarquia de tabelas(simples):
-table == tabela
+**Tabelas ñ são usadas para criar a estrutura do site**56
 	table row == linha de tabela(tag tr)
 		table header(título) == cabeçalho de tabela(tag th)
 		table data == dado de tabela(tag td)
@@ -938,5 +935,31 @@ Anatomia para Tabelas grandes
 
 
 Caption == Legenda da Tabela
-Escopo == Aonde os dados do título(th) estão localizados, col(itens se encontram abaixo, ou seja estão na mesma coluna) 
+Escopo(Para fins semânticos) == Aonde os dados do título(th) estão localizados: col(itens se encontram abaixo, ou seja estão na mesma coluna) 
 ou row(na mesma linha)
+
+NOVA PSEUDO-CLASSE:nth-child(2n){
+	Nesse caso o efeito será executado de 2 em 2 linhas
+	Exemplo: 
+	tr:nth-child(2n){
+		background-color: #fffff
+	}
+Parâmetros (odd ou 2n-1) faz as linhas ímpares ficarem com o efeito
+Parâmetros (even) faz as linhas pares ficarem com o efeito
+
+
+Cabeçalho fixo:
+	position: relative no <table>
+	position: sticky(grudar) na tag q deseja fixar
+	top: 0 ou -1px
+	
+
+MESCLANDO CÉLULAS:
+
+Expansão em forma de coluna:	<td colspan=" ">        </td>
+
+  Ex: 	<td colspan="2">B</td>	  -> expandindo B para 2 colunas.
+
+Expansão em forma de linha:	<td rowspan=" ">        </td>
+
+  Ex:	        <td rowspan="3">D</td>	  -> expandindo D para 3 linhas.
