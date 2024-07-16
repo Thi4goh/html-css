@@ -938,6 +938,7 @@ Caption == Legenda da Tabela
 Escopo(Para fins semânticos) == Aonde os dados do título(th) estão localizados: col(itens se encontram abaixo, ou seja estão na mesma coluna) 
 ou row(na mesma linha)
 
+EFEITO ZEBRADO:
 NOVA PSEUDO-CLASSE:nth-child(2n){
 	Nesse caso o efeito será executado de 2 em 2 linhas
 	Exemplo: 
@@ -963,3 +964,47 @@ Expansão em forma de coluna:	<td colspan=" ">        </td>
 Expansão em forma de linha:	<td rowspan=" ">        </td>
 
   Ex:	        <td rowspan="3">D</td>	  -> expandindo D para 3 linhas.
+  
+
+
+Aplicar CSS em colunas: (só irá funcionar os escopos estiverem definidos)
+1. Dentro de table, cria-se a tag colgroup
+2. dentro de colgroup cria a tag col
+3. cada col represanta o escopo definido no cabeçalho
+
+<colgroup>
+	<col class="nome">
+	<col class="genero">
+	<col class="idd">
+	<col class="prof">
+</colgroup>
+<caption>Cadastro</caption>
+<thead>
+	<th scope="col">Nome</th>
+	<th scope="col">Sexo</th>
+	<th scope="col">Idade</th>
+	<th scope="col">Profissão</th>
+</thead>
+
+Criar rolagem lateral apenas dentro da tabela:
+1.coloca o table dentro de uma div
+2.usa-se overflow-x(conteudo que transborda): auto
+3. width 50vw(opcional)
+
+
+
+Iframes:
+display: inline
+Tag <iframe>
+Parâmetros{ 
+	frameborder:0, 1(defina se tera bordar ou nao)
+	src=''(fonte do site que estara dentro do iframe), pode se colocar links para acessar outra pags dentro do site exemplo src='pg001.html' 
+	height e width (pode ser configurado nos parametros do iframe)
+	scrolling: auto(Se o conteudo for grande irá criar a barra de rolagem), yes(tera barra independente do tamanho), no(nao tera barra)
+	name: 'frame'(pode ser usado para acessar um link da sua pagina dentro desse iframe, ex: <li><a href="paginas/pg01.html" target="frame">Primeira página</a></li>)
+	srcdoc= '<h1>...</h1>'(usado para criar alguma coisa dentro do iframe)
+	referrerpolicy='no-referrer'(evitar a captura de dados)
+	sandbox='sandbox'(bloqueia tudo), 'allow ...'(bloqueia tudo, menos oq vc permitir)
+	
+}
+Caso o iframe nao seja compativel com o navegador, dentro do iframe pode-se colocar um link para o site
