@@ -5,7 +5,7 @@
 **Atalho: Ctrl + ; selecione o texto e ele fica comentado**
 **Atalho: Alt + z quebra de linha no vscode**
 **Atalho: Shift + Alt + F Formata os texto automaticamente no vs**
-
+**Atalho: Tab para mudar de um parametro para outro. EX: name"" id""
 
 *Como a internet surgiu?
 
@@ -996,7 +996,7 @@ Criar rolagem lateral apenas dentro da tabela:
 Iframes:
 display: inline
 Tag <iframe>
-Parâmetros{ 
+Atributos{ 
 	frameborder:0, 1(defina se tera bordar ou nao)
 	src=''(fonte do site que estara dentro do iframe), pode se colocar links para acessar outra pags dentro do site exemplo src='pg001.html' 
 	height e width (pode ser configurado nos parametros do iframe)
@@ -1008,3 +1008,60 @@ Parâmetros{
 	
 }
 Caso o iframe nao seja compativel com o navegador, dentro do iframe pode-se colocar um link para o site
+
+
+Formulários:
+TAG <form>
+Atributos do form:
+	autocomplete= 'off'(desativa o autocompletar do google)
+	action="cadastro.php"(quando clicar em submit os dados serão enviados para esse cadastro.php)
+	method='get/post'{
+	metodo post é mais "seguro"(dados aparecem dentro do inspecionar/network), ideal para envio de arquivos
+	metodo get é usado para dados não sensiveis(dados aparecem na URL), não usar quando os dados ultrapassarem 3000bits(3000 letras)
+	o ideal é o uso do protocolo https(estudar) para criptografia
+	
+}
+Dentro do <form>:
+	1.fieldset(Agrupar campos)
+	2.legend(legenda para o fieldset)
+	3.inputs{
+		1.input:text(campos para preeencher)
+		2.input:submit(botão de enviar)
+		3.input:password(para senhas)
+		4.input:reset(para limpar)
+		5.input:number(para adicionar valores numéricos que não sejam senhas)
+		6.input:month
+		7.input:date
+		8.input:time
+		9.input:email
+		10.input:tel(estudar expressões regulares ou RegEx para criar filtros){
+			parâmetro pattern="^\(\d{2}\)[0-9] ou \d {4, 5}-[0-9]{4}$"(expressão regular ou RegEx)
+		}
+		11.input:radio(para inputs de mesmo grupo, **os inputs devem conter o mesmo NAME e ID diferente**) 
+		//deve-se definir um value para o radio Ex: value='M'(de masculino) ou 'F'(de feminino)
+		12.input:checkbox
+		13.input:range(EX: nivel de satisfação 0 a 100)
+		14.input:color(Escolher uma cor)
+		15.input:file(Subir arquivos)// USAR O MÉTODO POST
+		
+		Parâmetros gerais de input:
+		required: (não funfa se nao preencher os campos)
+		placeholder=""(local para colocar coisas, colocar texto dentro da caixa/campo)
+		autocomplete='username'(auxiliar a caixa de autocomplete)
+		disabled(desabilita a opção )
+		
+		Funciona apenas para inputs específicos:
+		minlenght="" e maxlenght=""(min e max de caracteres para preencher os campos)
+		size=""(tamanho da caixa)
+		min e max='' (min e max de uma caixa numérica)
+		step(passo)='0.5'(quanto em quanto o meu valor vai pulando. EX: média: 0.5, 1, 1.5, 2...)
+		value=''(seu campo ja vai iniciar com o valor 5, anulando o placeholder)
+		value para mês/dia/hora pode ser "2024-07/2024-07-18/19%3A30" ou o JS pega a data atual e substitui(mais correto)
+		checked
+	}
+name =""(mais util para html e php)
+id=""(mais util para js e para o label)
+	
+LABEL:
+Relacionar a caixa <input> com o nome dentro de um <p> ou <div> através do id
+

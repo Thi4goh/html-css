@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4</title>
+    <style>
+        div{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="">
+        <fieldset>
+            <legend>Dados</legend>
+            <div>
+                <label for="iname">Nome</label>
+                <input type="text" name="name" id="iname" minlength="2" maxlength="20" autocomplete="name">
+            </div>
+            <div>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" minlength="8" maxlength="30" required autocomplete="email">
+            </div>
+            <div>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" placeholder="(xx)xxxxx-xxxx" pattern="^\d{2}\d{4,5}\d{4}$" required autocomplete="tel">
+            
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Clear">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
