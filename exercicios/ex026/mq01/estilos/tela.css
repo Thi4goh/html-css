@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*Estilo Tela*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+body{
+    line-height: 1.3em;
+    background-color: rgb(250, 250, 243);
+}
+
+header{
+    background-color: rgb(107, 90, 68);
+    padding: 40px 10px 1px 10px;
+    box-shadow: 0px 2px 4px rgba(24, 21, 18, 0.527);
+}
+header h1{
+    text-align: center;
+    color: beige;
+    margin-bottom: 30px;
+    text-shadow: 0px 1px 4px rgba(24, 21, 18, 0.349);
+}
+menu ul{
+    list-style-type: none;
+    width: max-content;
+    
+}
+menu li{
+    display: inline-block;
+    padding: 6px 8px;
+    font-size: 1.1em;
+    border-radius: 3px;
+    width: 60px;
+    text-align: center;
+    
+}
+menu li:hover , menu a:hover{
+    background-color: honeydew;
+    transition-duration: .2s;
+    color: rgb(46, 25, 16);
+}
+menu a{
+    color: beige;
+}
+
+main{
+    margin: auto;
+    width: 600px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+main h2{
+    text-align: center;
+    padding: 10px;
+    color:rgb(24, 21, 18) ;
+    text-shadow: 0px 1px 4px rgba(24, 21, 18, 0.233);
+}
+main p{
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 15px;
+}
+main a{
+    color: rgb(141, 109, 60);
+}
+main a:hover{
+    text-decoration: underline;
+}
