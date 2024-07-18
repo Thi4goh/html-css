@@ -1065,3 +1065,71 @@ id=""(mais util para js e para o label)
 LABEL:
 Relacionar a caixa <input> com o nome dentro de um <p> ou <div> através do id
 
+
+SELECT, DATALIST E TEXTAREA:
+
+<form action="" method="post">
+        <fieldset>
+            <div>
+                <label for="iest">Estado</label>
+                <select name="est" id="iest" >
+                    <option value="" selected>-- Selecione --</option>
+                    <optgroup label="Regiões Sudestes">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Regiões Nordestes">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="ipro">Profissão</label>
+                <input type="text" name="pro" id="ipro" list="lstpro">
+                <datalist id="lstpro">
+                    <option>Professor</option>
+                    <option>Contador</option>
+                    <option>Advogado</option>
+                    <option>Desenvolvedor</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="imsg">Mensagem</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+
+Podemos usar o atributo  style="resize: none" para evitar que o usuário altere o tamanho do textarea
+
+
+
+OUTPUT{
+	Serve para saída de valores. EX:
+	
+	<fieldset>
+            <div>
+                <label for="iv1">1° Valor</label>
+                <input type="number" name="v1" id="iv1" oninput="isoma.innerText = Number(iv1.value) + Number(iv2.value)">
+            </div>
+            <div>
+                <label for="iv2">2° Valor</label>
+                <input type="number" name="v2" id="iv2" oninput="isoma.innerText = Number(iv1.value) + Number(iv2.value)">
+                
+            </div>
+            <div>
+                <label for="isoma">Soma</label>
+                <output name="soma" id="isoma">0</output>
+            </div>
+        </fieldset>
+}
+
