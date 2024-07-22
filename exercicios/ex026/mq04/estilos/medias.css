@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias
+
+Typical Devices Breakpoints
+---------------------------
+Pequenas Telas: até 600px
+Celulares: 600px até 768px
+Tablets: 768px até 992px
+Desktops: 992px até 1200px
+Telas Grandes: acima de 1200px 
+*/
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg); /*desnecessário*/
+    }
+    #phone{display: none;}
+    #print{display: block;}
+    main::after{
+        content: "Esse conteúdo foi impresso no site mediaquery.com";
+    }
+}
+@media screen and (min-width: 768px){ /*Tablets*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: block;}
+}
+@media screen and (min-width: 992px){ /*Desktops*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #tablet{display: none;}
+    #pc{display: block;}
+}
+@media screen and (min-width: 1200px){ /*Grandes Telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #pc{display: none;}
+    #tv{display: block;}
+    main{
+        max-width: 700px;
+    }
+}

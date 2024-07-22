@@ -1138,5 +1138,44 @@ MEDIA QUERY == Media Type + Media Features:
 Media Type = tipo de mídia 
 Media Features = característica de mídia(são informados entre parênteses isoladamente)
 
-1.Deverá criar um .css para cada coisa. EX: tela.css(vai configurar a tela), print.css(vai configurar o site para impressão)
+1.<link rel="stylesheet" href="estilos/tela.css" media="screen">
+  <link rel="stylesheet" href="estilos/impre.css" media="print">
+  
+2.<link rel="stylesheet" href="estilo/style.css" media="all">
+  <link rel="stylesheet" href="estilo/retrato.css" media="screen and (orientation: portrait)">
+  <link rel="stylesheet" href="estilo/paisagem.css" media="screen and (orientation: landscape)">
+  
+3.Dentro de um mesmo css usa-se @media screen and (orientation: landscape), @media screen and (orientation: portrait) 
+
+
+
+Mobile first(Para melhor UX):
+Cria-se primeiro o site para a versão de mobile
+
+Vantagens:
+1.Divulgação do site(SEO)
+2.Melhor UX
+3.Aumento de credibilidade
+4.Melhor performance
+
+
+Typical Device Breakpoints(pode estar desatualizado, verificar na W3Schools):
+
+/* Pequenas telas (até 600px) */
+@media only screen and (max-width: 600px) {...}
+
+/* Celulares (600px - 768px) */
+@media only screen and (min-width: 600px) {...}
+
+/* Tablets (768px - 992px) */
+@media only screen and (min-width: 768px) {...}
+
+/* Desktops (992px - 1200px) */
+@media only screen and (min-width: 992px) {...}
+
+/* Telas grandes (acima de 1200px) */
+@media only screen and (min-width: 1200px) {...}
+
+/*Impressão*/
+@media print{...}
 
