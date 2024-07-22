@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="medias.css">
+
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <i id="menu" onclick="clicar()" class="material-symbols-outlined">menu</i>
+        <nav id="itens">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Contact</a></li>
@@ -26,5 +30,23 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis accusamus dolores. Ad inventore asperiores, officiis magni dolorum eaque quibusdam quia deserunt, consequatur repellat ipsa cumque ut. Necessitatibus, ad beatae?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis accusamus dolores. Ad inventore asperiores, officiis magni dolorum eaque quibusdam quia deserunt, consequatur repellat ipsa cumque ut. Necessitatibus, ad beatae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis accusamus dolores. Ad inventore asperiores, officiis magni dolorum eaque quibusdam quia deserunt, consequatur repellat ipsa cumque ut. Necessitatibus, ad beatae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis accusamus  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia velit sapiente sunt quis obcaecati, eos nam dolorum beatae ipsa assumenda eius quaerat in facilis molestiae autem nulla laudantium numquam maiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel itaque culpa accusantium enim tempora illo dolores eveniet ipsa sit iusto labore quasi, nesciunt pariatur aliquam voluptate at, adipisci sunt repellendus!dolores. Ad inventore asperiores, officiis magni dolorum eaque quibusdam quia deserunt, consequatur repellat ipsa cumque ut. Necessitatibus, ad beatae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis accusamus dolores. Ad inventore asperiores, officiis magni dolorum eaque quibusdam quia deserunt, consequatur repellat ipsa cumque ut. Necessitatibus, ad beatae?</p>
     </main>
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clicar(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
+
 </html>
