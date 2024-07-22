@@ -1133,3 +1133,10 @@ OUTPUT{
         </fieldset>
 }
 
+MEDIA QUERY == Media Type + Media Features:
+
+Media Type = tipo de mídia 
+Media Features = característica de mídia(são informados entre parênteses isoladamente)
+
+1.Deverá criar um .css para cada coisa. EX: tela.css(vai configurar a tela), print.css(vai configurar o site para impressão)
+
